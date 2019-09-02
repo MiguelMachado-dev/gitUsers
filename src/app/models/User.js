@@ -9,10 +9,7 @@ class User extends Model {
         password: Sequelize.VIRTUAL,
         password_hash: Sequelize.STRING,
         cpf: Sequelize.STRING,
-        admin: {
-          type: Sequelize.BOOLEAN,
-          defaultValue: false,
-        },
+        admin: Sequelize.BOOLEAN,
       },
       {
         sequelize,
